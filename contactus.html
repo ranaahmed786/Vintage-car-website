@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contactus.css">
+    <title>contactus</title>
+</head>
+<body>
+    <div id="N-H-bg">
+        <nav>
+              <!-- logo -->
+              <div ><h1 id="logo">Velocity</h1></div>
+            <!-- regular navbar -->
+            <div id="nav-c-r">
+                <div id="home-ref"><a class="nav-atags" href="index.html" target="_blank">Home</a></div>
+                <div  id="contactus-ref"><a class="nav-atags" href="contactus.html" target="_blank">Contact-us</a></div>
+            </div>
+            <!-- dropdown navbar -->
+            <div id="nav-c-d">
+                <div id="menu-btn"><i class="fa-solid fa-list"></i></div>
+                <div id="home-ref"><a class="nav-atags" href="index.html" target="_blank">Home</a></div>
+                <div id="contactus-ref"><a class="nav-atags" href="contactus.html" target="_blank">Contact us</a></div>
+            </div>
+        </nav>
+        <section id="contact-container">
+            <div id="contact-header">
+                <div id="header-elements"><h1>Contact us</h1>
+                        <hr>
+                        <p id="name-thanks">Feel free to reach us out</p>
+                </div>
+            </div>
+            <div id="form-container">
+                <form >
+                    <input type="text" id="name" placeholder="Name" autofocus>
+                    <input type="email" id="Email" placeholder="Email" required>
+                    <textarea name="query" id="query" placeholder="Enter your query here.." rows="6" ></textarea>
+                    <div id="btn-cont"><input id="sub-btn" type="submit"></div>
+                </form>
+            </div>
+            <div id="alternate-btns">
+                <div id="maillink">
+                    <a href="mailto:ranamuhammadahmed6@gmail.com?subject= A query for velocity"> Contact us through mail</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>© 2024 Velocity. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('form').onsubmit=function(event){
+            event.preventDefault();
+        let  name =document.querySelector('#name').value;
+        document.querySelector('#name-thanks').innerHTML=`Thanku ${name}! we will get back to u`;
+        }
+        
+    </script>
+</body>
+</html>
