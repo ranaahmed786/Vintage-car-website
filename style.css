@@ -143,7 +143,7 @@ nav{
     transform: rotateY(  0deg) translateZ(430px); }
   .carousel__face:nth-child(2) { 
     background-image: url(images/carouselimg2.jpg);
-      transform: rotateY( 40deg) translateZ(430px); }
+      transform: rotateY( 40deg) translateZ(430px);}
   .carousel__face:nth-child(3) {
     background-image: url(images/carouselimg3.jpg);
     transform: rotateY( 80deg) translateZ(430px); }
@@ -218,7 +218,7 @@ hr{
     position: relative;
     cursor: pointer;
     transform-style: preserve-3d;
-    transition: transform 5s;
+    transition: transform 3s;
     background-color: rgba(192, 192, 192, 0.9);
     border-radius: 15px;
     margin: 5px;
@@ -259,12 +259,8 @@ img {
     flex-direction: column;
 }
 
-.card.flipped .card-l-f {
-    transform: rotateY(-180deg);
-}
-
-.card.flipped .card-l-b {
-    transform: rotateY(0deg);
+.card.flipped {
+  transform: rotateY(180deg);
 }
  /* card title and description */
  .card-titles,.card-descriptions{
